@@ -5,8 +5,8 @@ body {
 img {
 	max-height: 200px;
 	max-width: 32px;
-	height: 200px;
-	width: 32px;
+	height: 5px;
+	width: 5px;
 }
 
 table, th, td {
