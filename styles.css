@@ -1,0 +1,75 @@
+body {
+	background-color: #a68cba;
+}
+
+img {
+	max-height: 1000px;
+	max-width: 160px;
+	
+}
+
+table, th, td {
+  border: 5px solid black;
+}
+
+h2 {
+	text-align: center;
+}
+
+.lol {
+	background-color: lightblue;
+	color: blue;
+}
+
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 5px solid black;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        /* Initially hide table rows */
+        tbody tr {
+            opacity: 0;
+            transform: translateY(50px);  /* Slide from below */
+            animation: slideIn 0.6s ease-out forwards; /* Apply slide-in animation */
+        }
+
+        /* Keyframe animation for slide-in effect */
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);  /* Start from below */
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);  /* End in normal position */
+            }
+        }
+
+        /* Optional: Stagger the rows with different delays for effect */
+        tbody tr:nth-child(1) {
+            animation-delay: 0.5s;
+        }
+        tbody tr:nth-child(2) {
+            animation-delay: 0.7s;
+        }
+        tbody tr:nth-child(3) {
+            animation-delay: 0.9s;
+        }
+        tbody tr:nth-child(4) {
+            animation-delay: 1.1s;
+        }
+        tbody tr:nth-child(5) {
+            animation-delay: 1.3s;
+        }
